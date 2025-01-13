@@ -1,5 +1,4 @@
 headingLevels:
-  - 1
   - 2
   - 3
   - 4
@@ -12,3 +11,7 @@ toolbar:
   - bold
   - italic
   - link
+  - bulletedList
+  - numberedList
+  - removeFormat
+  - sourceEditing

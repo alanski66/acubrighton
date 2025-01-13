@@ -1,0 +1,28 @@
+fieldLayouts:
+  ff8b88be-9883-449c-aa7a-023383c1207c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-13T11:07:29+00:00'
+            elementCondition: null
+            fieldUid: ac41f01b-141c-4f17-96e8-7dadb8b1ff72 # Price table
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ffe3b5e0-b0b7-4c5c-bae1-67cd369b3b1f
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Pricing table'
+        uid: 948e4a78-25fc-4f4e-a0c1-3f758a02fe69
+        userCondition: null
+handle: pricing
+name: Pricing
+sortOrder: 5

@@ -19,7 +19,7 @@ previewTargets:
         - '{url}'
 propagationMethod: all
 siteSettings:
-  44796fd5-bb11-438e-893b-74cd6f43996f: # Rebecca Luff
+  44796fd5-bb11-438e-893b-74cd6f43996f: # Acu Brighton
     enabledByDefault: true
     hasUrls: true
     template: testimonials/_entry.twig

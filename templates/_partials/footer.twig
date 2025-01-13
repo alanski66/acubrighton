@@ -6,7 +6,9 @@
 <div class="container-fluid footer">
 	<div class="container">
 		<footer class="d-flex flex-wrap justify-content-around align-items-center  border-0">
-			<p class="col-md-4 mb-0 text-body-secondary">© {{ 'now' | date('Y') }} Rebecca Luff</p>
+			<p class="col-md-4 mb-0 text-body-secondary">© {{ 'now' | date('Y') }} {{ siteName }} | 
+				<a class="nav-link d-inline" href="{{baseUrl}}privacy-policy">Privacy Policy</a>
+			</p>
 
 			
 {% cache %}

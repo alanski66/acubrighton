@@ -1,8 +1,9 @@
 <!-- block text -->
 
 
-<section class="d-flex">
-  <div class="container py-0 g-0">
-      {% if block.body | length %}{{block.body}}{% endif %} 
-      </div>
-    </section>
+
+  <div class="block block-{{block.type}} mb-5">
+    <h3>{% if block.title | length %}{{block.title}}{% endif %}   </h3>
+    {% if block.body | length %}{{block.body}}{% endif %} 
+  </div>
+    

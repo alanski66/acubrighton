@@ -1,20 +1,11 @@
+body,html{
+  height:100vh;
+}
 // page header
-body.my-work .balloon-header{
-    background-image: none!important;
+img.logo{
+  max-width:300px;
 }
-body.my-work img.balloon-people{
-    // background-image: none!important;
-    display: block!important;
-}
- img.balloon-people{
-    // background-image: none!important;
-    display: none!important;
-}
-.balloon-header{
-    background-image: url('../assets/images/balloon.png');
-    background-repeat: no-repeat;
-    background-position:109% 14px; //90% 52px;
-}
+
 
 .article{
   background-color: $white;
@@ -22,73 +13,10 @@ body.my-work img.balloon-people{
 .article.loop1{
   background: rgba(255, 255, 255, 0.95);
 }
-// curve background
-.curve {
-    position: absolute;
-    height: 250px;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
+//sections
+.services, .page{
+  background-image: url("../img/hero-bg.webp");
 }
-
-.curve::before {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    transform: translate(85%, 60%);
-    background-color: hsl(216, 21%, 16%);
-}
-
-.curve::after {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    background-color: #3c31dd;
-    transform: translate(-4%, 40%);
-    z-index: -1;
-}
-
-
-.curved-bottom {
-    /* Curved corners */
-    border-bottom-left-radius: 99% 60%;
-    border-bottom-right-radius: 99% 40%;
-}
-
-.curved-top {
-    /* Curved corners */
-    border-top-left-radius: 50% 40%;
-    border-top-right-radius: 50% 40%;
-}
-
-.custom-shape-divider-bottom-1735908194 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1735908194 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 56px;
-}
-
-.custom-shape-divider-bottom-1735908194 .shape-fill {
-    fill: #FFFFFF;
-}
-
-
 
 .blockquote-footer{
     font-size:100%;
@@ -133,6 +61,16 @@ a.icon-link{
   box-shadow:0 0 0 0.08rem !important;
   color: #606265;
 }
+
+//dropdown fix parent link
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+// .dropdown>.dropdown-toggle:active {
+//   /*Without this, clicking will make it sticky*/
+//     pointer-events: none;
+// }
 //home
 
 
@@ -146,7 +84,7 @@ a.icon-link{
 //     // // margin-left:-60px;
 // }
 //footer
-.cats h5.card-title{
+.services h5.card-title{
   margin-left: -15px;
 }
 .testimonials .user-content{
@@ -268,59 +206,28 @@ figure{
     background-color: #eee;
 }
 
-.balloon-people{
-  right: 19%;
-  top: -190px;
-  width: 54%;
-  
-}
+
 @media only screen and (max-width: 600px) {
-  .balloon-people{
-    // right:-33%;
-    top: -140px;
-  }
+
 }
 
 
-    h1 {
-      font-size: 1.4rem;
-    }
+
    
     @include media-breakpoint-up(sm) {
-      .balloon-people{
-        right: 18%;
-        top: -185px;
-        width: 54%;
-        
-      }
+
   }
   
   @include media-breakpoint-up(md) {
-    h1 {
-      font-size: 1.8rem;
-    }
-    .balloon-people{
-      right: 28%;
-      // top: -3px;
-      width: 44%;
-    }
-    .cats h5.card-title{
+
+    .services h5.card-title{
       margin-left: -26px;
     }
   }
 
   @include media-breakpoint-up(lg) {
-    h1 {
-      font-size: 2.3rem;
-    }
-    // work header
-    .balloon-people{
-      // right: 28%;
-      top: -203px;
-      width: 34%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+
+   
     //testy carousel
     .testimonials .user-content{
       height:400px;
@@ -338,74 +245,5 @@ figure{
     margin: 48px auto 0;
     width: 100%;
   }
-  
-  .youtube-embed,
-  .youtube embed,
-  .youtube iframe {
-    width: 100%;
-    max-height: 100%;
-  }
-  .youtube-embed {
-    position: relative;
-    padding-top: 56%;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  .youtube-embed img {
-    width: 100%;
-    top: -16.84%;
-    left: 0;
-  }
-  .youtube-embed iframe {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-  .youtube-embed iframe,
-  .youtube-embed img {
-    position: absolute;
-  }
-  
-  .youtube-embed button.embed-video__play {
-    background: url("https://www.nextiva.com/assets/svg/play-button.svg")
-        no-repeat center center,
-      rgba(33, 33, 33, 0.8);
-    background-size: 40%;
-    background-position: 55%;
-    border: 0;
-    border-radius: 50%;
-    position: absolute;
-    transition: all 0.2s ease;
-    -webkit-transition: background 0.2s;
-    width: 16%;
-    aspect-ratio: 1/1;
-    height: auto;
-    cursor: pointer;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-  }
-  .youtube-embed:hover button.embed-video__play,
-  .youtube-embed button.embed-video__play:focus,
-  .youtube-embed button.embed-video__play:focus-visible {
-    background: url("https://www.nextiva.com/assets/svg/play-button.svg")
-        no-repeat center center,
-      #005fec;
-    background-size: 40%;
-    background-position: 55%;
-    box-shadow: 0 0 0 4px #fff !important;
-    outline: none;
-  }
-  @media (min-width: 768px) {
-    .youtube-embed:hover button.embed-video__play,
-    .youtube-embed button.embed-video__play:focus,
-    .youtube-embed button.embed-video__play:focus-visible {
-      box-shadow: 0 0 0 8px #fff !important;
-    }
-  }
+
   

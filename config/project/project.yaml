@@ -1,4 +1,4 @@
-dateModified: 1736700166
+dateModified: 1736776711
 elementSources:
   craft\elements\Entry:
     -
@@ -30,7 +30,19 @@ elementSources:
       heading: 'Content Structures'
       type: heading
     -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
       key: 'section:a8461432-9f67-4ed1-ac53-5fb464f68ac8' # Pages
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+        - type
+        - 'field:381ca719-b0cc-4bba-9b7d-4f65f18f781f' # Image
       type: native
     -
       defaultSort:
@@ -116,23 +128,27 @@ meta:
   __names__:
     0a0a61db-c42b-49a9-b6cd-9a96be13752e: Intro # Intro
     0aad6b5b-d3fa-4b2d-b5c5-0537467930b4: Category # Category
+    0ec740d4-1b21-48e9-aafe-5bad22320620: Pricing # Pricing
     0feb6d1d-66c8-449f-a182-59ce63dc231a: 'Unsplash color' # Unsplash color
     1a2a8073-e10c-432b-841d-63f885e96036: Menu # Menu
     02a30bda-d2b5-41f6-ba9b-8ce888e8e6ae: Body # Body
     2f1244a3-6894-4944-9f5a-f9810dc55296: LinkedIn # LinkedIn
     3b9ecd0a-e61a-481d-8254-4787941102e7: Simple # Simple
+    3f060e13-3043-4dd7-b711-f4327bbe75ec: Page # Page
     3f249f62-1204-49f8-88a1-0111b89dc2fb: Contact # Contact
     04cc8b70-77b8-4d48-b526-04af3b4b0e44: '_Cards with icon' # _Cards with icon
     05a262f3-cee7-4198-a32e-342a95c71eb5: 'Page settings' # Page settings
     5ce4c45c-4533-4cba-8c45-36bfee218660: 'Media embed' # Media embed
     5e068733-e545-4667-8b60-515d9248b995: '_Contact form' # _Contact form
     5ec282a8-339e-4230-83c8-3f37c13e0440: 'LinkedIn profile link' # LinkedIn profile link
+    7c1d0e11-4707-4180-9a1c-660bd6732a4a: Pricing # Pricing
     7cf846f7-68cf-4d25-8fee-b90dbbd98e2b: 'Organisation slider' # Organisation slider
     7db3c732-6d8a-49e9-9318-1568be796175: People # People
     7e6edf00-9a03-433e-9b9d-10784caaa4be: article # article
     7e35174b-e100-46d4-9d3b-c6127c0923ab: 'Content builder' # Content builder
     7ec31d37-214a-451f-af7c-9c9bef77ab66: Telephone # Telephone
     8b8221e5-58d7-43f3-8e13-ff3559e61733: Slide # Slide
+    9a290d0b-0e6f-4ab1-ab23-4b99cb57d756: Description # Description
     9a873930-78fb-428c-af5e-51a59e874862: Embed # Embed
     9af5f9a1-0f69-4e01-8123-2d5c1543f5af: 'Hero button link' # Hero button link
     9ba69d50-bfc9-42a4-a532-0dd623c5d252: Blog # Blog
@@ -141,11 +157,13 @@ meta:
     19bdc5d9-798c-4b75-b12f-f3b309f06a0e: 'My work' # My work
     19da515d-1f1d-4979-bad0-42556b9f0b78: Align # Align
     25a52d86-943d-4f23-b9c4-c07336f7abdb: Testimonial # Testimonial
-    27fa1076-49b0-4d82-97c2-9b92351cce5a: page # page
+    27fa1076-49b0-4d82-97c2-9b92351cce5a: 'Page builder' # Page builder
+    37ed161c-4627-4fef-92f3-af94cf847dd3: Price # Price
     57a9f983-128e-4777-998d-57ad443ae51d: 'Unsplash url' # Unsplash url
+    58c65ed1-bba4-448c-b72a-c1fa5446beec: 'Treatment price' # Treatment price
     63fba8da-d052-427a-92d9-4d960b3420e7: 'Contact form' # Contact form
     64ad5ce8-c3a8-4bce-b98b-2677ebf3ac78: _Text # _Text
-    74fc919e-4e7c-4b41-a8b7-4226de6ef603: Work # Work
+    74fc919e-4e7c-4b41-a8b7-4226de6ef603: Services # Services
     92bca146-99c6-485b-af9e-f66ce402a4bd: 'My Work mini case studies' # My Work mini case studies
     95d542d0-1ea8-41c8-9ae0-d83d5751f5c5: 'Contact links' # Contact links
     97e342cd-a55e-42c9-99d5-de73541a4860: Images # Images
@@ -158,7 +176,7 @@ meta:
     833f8aa3-702e-4829-a2c5-272361210dbb: 'Content builder' # Content builder
     1336dd30-133c-404e-bd26-285c7b7a1c59: Icon # Icon
     9630c92b-7a6b-474a-93b3-712cb9f943c0: 'Public Schema' # Public Schema
-    44796fd5-bb11-438e-893b-74cd6f43996f: 'Rebecca Luff' # Rebecca Luff
+    44796fd5-bb11-438e-893b-74cd6f43996f: 'Acu Brighton' # Acu Brighton
     49219d55-b624-4ebc-b977-1f75b9e21aa2: Logos # Logos
     994884b7-02f8-4488-9302-b1688ae96e6a: '_Text with image' # _Text with image
     04070434-f1fd-4db0-8ad0-51749d544db5: Square # Square
@@ -166,12 +184,13 @@ meta:
     99639335-7fe8-46fe-bbde-b2f117aad2f6: Image # Image
     a1b32f40-889c-402e-ba5b-de1a3a479e73: 'Hero button text' # Hero button text
     a8461432-9f67-4ed1-ac53-5fb464f68ac8: Pages # Pages
+    ac41f01b-141c-4f17-96e8-7dadb8b1ff72: 'Price table' # Price table
     ae10a9d7-2e31-45bd-a334-d6fe39c19379: Quote # Quote
     aed592ff-b867-4dab-a4d0-90b22f839a79: 'Hero Headline' # Hero Headline
     b2b15e5c-80c6-4bff-b6d1-e09b1bb48fac: 'Unsplash author' # Unsplash author
     b9c4f964-3733-467b-b83e-e3802aa7b65f: SEO # SEO
     b11d0d53-3b5b-434f-85be-8d7b05f27f2a: Homepage # Homepage
-    b83563e4-d016-4de4-9291-d211ee33f97d: 'Rebecca Luff' # Rebecca Luff
+    b83563e4-d016-4de4-9291-d211ee33f97d: 'AcuBrighton Group' # AcuBrighton Group
     ba3ad3cc-5e02-4411-a9b7-0cde778a7517: 'My Work' # My Work
     bc269089-f088-4dc3-85a3-8ca88015e753: 'testimonial photo' # testimonial photo
     c6d65337-e203-4774-8ae2-435e731da46e: Slides # Slides
@@ -256,8 +275,7 @@ plugins:
       robotsTxt: "{# Sitemap URL #}\r\nSitemap: {{ url(seo.sitemapName ~ '.xml') }}\r\n\r\n{# Disallows #}\r\n{% if craft.app.config.env != 'production' %}\r\n\r\n{# Disallow access to everything when NOT in production #}\r\nUser-agent: *\r\nDisallow: /\r\n\r\n{% else %}\r\n\r\n{# Disallow access to cpresources/ when live #}\r\nUser-agent: *\r\nDisallow: /cpresources/\r\n\r\n{% endif %}"
       sitemapLimit: '1000'
       sitemapName: sitemap
-      socialImage:
-        - '593'
+      socialImage: ''
       title:
         -
           __assoc__:
@@ -269,7 +287,7 @@ plugins:
               - '0'
             -
               - template
-              - '{title}'
+              - '{{object.title}}'
         -
           __assoc__:
             -
@@ -310,6 +328,7 @@ plugins:
 system:
   edition: solo
   live: true
-  name: 'Rebecca Luff'
+  name: AcuBrighton
+  retryDuration: null
   schemaVersion: 5.5.0.0
   timeZone: America/Los_Angeles

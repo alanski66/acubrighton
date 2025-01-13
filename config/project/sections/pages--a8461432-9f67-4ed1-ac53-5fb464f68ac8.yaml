@@ -1,7 +1,9 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 27fa1076-49b0-4d82-97c2-9b92351cce5a # page
+  - 3f060e13-3043-4dd7-b711-f4327bbe75ec # Page
+  - 27fa1076-49b0-4d82-97c2-9b92351cce5a # Page builder
+  - 7c1d0e11-4707-4180-9a1c-660bd6732a4a # Pricing
   - 3f249f62-1204-49f8-88a1-0111b89dc2fb # Contact
 handle: pages
 maxAuthors: 1
@@ -13,14 +15,14 @@ previewTargets:
         - label
         - 'Primary entry page'
       -
-        - refresh
-        - '1'
-      -
         - urlFormat
         - '{url}'
+      -
+        - refresh
+        - '1'
 propagationMethod: all
 siteSettings:
-  44796fd5-bb11-438e-893b-74cd6f43996f: # Rebecca Luff
+  44796fd5-bb11-438e-893b-74cd6f43996f: # Acu Brighton
     enabledByDefault: true
     hasUrls: true
     template: pages/_entry.twig

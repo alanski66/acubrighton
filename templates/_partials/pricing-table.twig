@@ -1,0 +1,30 @@
+<div class="container-fluid services py-5">
+    <div class="container ">
+        <div class="row">
+            {% for block in pricing.priceTable %}
+            
+            
+            <div class="col-l col-md-6 mb-4 ">
+                <div class="card h-100 shadow-lg py-3">
+                    <div class="card-body">
+                        <div class="text-center p-3">
+                            <h5 class="card-title">{{block.title}}</h5>
+                            
+                            <br>
+                            <span class="h2">£{{block.price}}</span>/session
+                            <br>
+                        </div>
+              
+                        <div class="text-center p-4">{{block.description}}</div>
+                    </div>
+                    <div class="card-footer bg-white border-0 text-center">
+                        <a class="btn btn-primary">Book now</a>
+                      </div>
+
+                </div>
+            </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+</div>
