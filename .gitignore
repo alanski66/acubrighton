@@ -1,5 +1,5 @@
-
-config/licence.key
+/config/license.key
+/config/license.key.1
 .env
 /.env
 *.env.**
