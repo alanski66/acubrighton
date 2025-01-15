@@ -1,15 +1,25 @@
 {% extends "_layouts/generic-page-layout.twig" %}
 
 {% block content %}
+{% if entry.heroStyle == "fullHero" %}
 
-<section class="d-none hero   position-relative">
-  <div class="container hero-image">
+
+<section class="d-none d-lg-block text-center hero   m-0 p-0 position-relative">
+  <div class=" hero-image">
   <div class="overlay">
-    <h1>Hero Image With Overlay</h1>
-    <p>A full width background image built with HTML & CSS.</p>
+    <h1 class="py-5">{{entry.heroheadline}}</h1>
+    <p>        {{ entry.words |replace({',': "<span class='d-inline text-primary'>&nbsp;//&nbsp; </span>" })|raw }}
+    </p>
+    <div class="w-25 py-5">
+      <a href="{{entry.heroButtonLink.one().url}}" 
+    class="w-75 btn btn-primary btn-lg mx-auto ms-md-0 mb-2 ">
+      {{entry.heroButtonText}}</a>
+    </div>
   </div>
 </div>
 </section>
+{% endif %}
+{% if entry.heroStyle == "twoColumn" %}
 <section class="bg-white d-flex">
   <div class="container">
     
@@ -39,19 +49,19 @@
           height=" {{asset.height}}" loading="lazy">
       </div>
       <div class="2nd col-12  col-md-6 col-lg-6 justify-content-start py-0 py-md-0">
-        <div class="col-12 d-none d-flex mx-auto fs-6">
+        <div class="col-12 d-none d-lg-block d-flex mx-auto fs-6">
           {{ entry.words |replace({',': "<span class='d-inline text-primary'>&nbsp;//&nbsp; </span>" })|raw }}
         </div>
         {# <div class="col-12 d-none d-lg-block d-flex mx-auto fs-6">
           {{ entry.words |replace({',': "<span class='d-inline text-primary'>&nbsp;//&nbsp;</span>" })|raw }}
         </div> #}
-        <h1 class="d-flex text-center text-md-start my-4">
+        <h1 class="d-flex text-center text-md-start my-4 my-xl-5">
           {{entry.heroheadline}}
         </h1>
 
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <div class="d-grid gap-2 d-md-flex w-50 justify-content-md-start">
           <a href="{{entry.heroButtonLink.one().url}}" 
-          class="w-75 btn btn-primary btn-lg mx-auto ms-md-0 mb-2 ">
+          class=" btn btn-primary btn-lg mx-auto ms-md-0 mb-2 ">
             {{entry.heroButtonText}}</a>
 
         </div>
@@ -60,6 +70,7 @@
     </div>
   </div>
 </section>
+{% endif %}
 
 {% include('_partials/cat-cards') %}
 
