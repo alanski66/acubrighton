@@ -1,13 +1,17 @@
 {% extends "_layouts/generic-page-layout.twig" %}
 {% import '_macros' as macros %}
 
+{% set entries = craft.entries.section('testimonials').limit(20).all() %}
+
+
 {% block content %}
+{% if entries | length  %}
 <section class="testimonials container-fluid bg-ight p-5">
     <div class="container">
         <h3>Testimonials</h3>
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner row g-2">
-                {% set entries = craft.entries.section('testimonials').limit(20).all() %}
+                
                 {% for entry in entries %}
 
 
@@ -29,11 +33,11 @@
                                     <div class="text-center fw-semibold mb-3">{{entry.organisation}}</div>
                                     <div class="px-5 text-center">{{entry.quote}}</div>
                                     <div class="ratings text-center">
-                                    <a class="link-offset-2 link-underline link-underline-opacity-0"
+                                    {# <a class="link-offset-2 link-underline link-underline-opacity-0"
                                         href="{{entry.linkedinProfileLink}}">
                                         <img src="{{baseUrl}}assets/images/linkedin-logo-100.png" class="img-fluid"
                                             width="20">
-                                    </a>
+                                    </a> #}
 
                                 </div>
                             </div>
@@ -58,4 +62,5 @@
     </div>
 
 </section>
+{% endif %}
 {% endblock %}

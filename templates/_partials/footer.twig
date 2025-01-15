@@ -5,8 +5,8 @@
 <!-- Footer -->
 <div class="container-fluid footer">
 	<div class="container">
-		<footer class="d-flex flex-wrap justify-content-around align-items-center  border-0">
-			<p class="col-md-4 mb-0 text-body-secondary">© {{ 'now' | date('Y') }} {{ siteName }} | 
+		<footer class="d-flex flex-wrap justify-content-be align-items-center  border-0">
+			<p class="d-flex col-md-12 col-lg-4 mb-0 justify-content-center justify-content-lg-start">© {{ 'now' | date('Y') }} {{ siteName }} | 
 				<a class="nav-link d-inline" href="{{baseUrl}}privacy-policy">Privacy Policy</a>
 			</p>
 
@@ -15,26 +15,17 @@
 	
 
 
-			<ul class="nav col-md-8 justify-content-end">
-				{% set menu = craft.entries.section('menu').all() %}
-
+			<ul class="nav col-md-12 col-lg-8 justify-content-center justify-content-lg-end">
+				{% set menu = craft.entries.section('pages')
+				.hide(false)
+				.level(1)
+				.all() %}
 
 				{% for entry in menu %}
-				{% if entry.entryLink.one()|length %}
-				{% set navlink = entry.entryLink.one().url %}
-				{% else %}
 
-				{% set navlink = alias('@web') ~ '/' ~ entry.customLink %}
-				{% endif %}
-				{% set btnnav = "" %}
-				{% set mnuClass = "" %}
-
-				<li
-					class="nav-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }} {{ entry.title |lower }}">
-					<a id="{{ entry.title }}" href="{{ navlink }}"
-						class="nav-link {{ macros.activeLinkClass(navlink, entry.level) |trim }} level{{ entry.level }} {{ mnuClass }}">{{entry.title
-						}}</a>
-				</li>
+				<li class="nav-item p-0 m-0">
+					<a href="{{entry.url}}" class="nav-link py-0">{{entry.title}}</a>
+				  </li> 
 
 				{% endfor %}
 			</ul>
