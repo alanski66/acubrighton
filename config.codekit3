@@ -1607,6 +1607,14 @@
       "oAP" : "\/templates\/blocks\/block_contactForm.twig",
       "oF" : 0
     },
+    "\/templates\/blocks\/block_embed.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_embed.twig",
+      "oF" : 0
+    },
     "\/templates\/blocks\/block_image.twig" : {
       "cB" : 0,
       "ft" : 8192,

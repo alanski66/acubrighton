@@ -8,7 +8,7 @@
   <div class=" hero-image">
   <div class="overlay">
     <h1 class="py-5">{{entry.heroheadline}}</h1>
-    <p>        {{ entry.words |replace({',': "<span class='d-inline text-primary'>&nbsp;//&nbsp; </span>" })|raw }}
+    <p>        {{ entry.words |replace({',': "<span class='d-inline text-primary'>&nbsp;//&nbsp;</span>" })|raw }}
     </p>
     <div class="w-25 py-5">
       <a href="{{entry.heroButtonLink.one().url}}" 
@@ -26,7 +26,7 @@
     <div class="row flex-sm-row-reverse align-items-center align-items-md-end align-items-lg-center py-5 py-lg-0">
      
       <div class="col-12 d-flex d-none d-sm-none d-md-flex d-lg-none mx-auto fs-6">
-        {{ entry.words |replace({',': "<span class='d-inline text-primary'>&nbsp;//&nbsp; </span>" })|raw }}
+        {{ entry.words |replace({',': "<span class='d-inline text-primary'> &nbsp;//&nbsp;</span>" })|raw }}
       </div>
       <div class="col  col-md-6 col-lg-6">
         

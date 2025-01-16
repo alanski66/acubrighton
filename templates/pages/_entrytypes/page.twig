@@ -23,7 +23,9 @@
 
             <div class="col-12  {% if asset|length %}col-md-7 order-last order-md-first{%endif%}" >
 
-                <h1 class="d-none d-md-block mb-4">{{entry.title}}</h1>
+                <h1 class="d-none d-md-block mb-4">
+                    <span class='d-inline text-primary'> &nbsp;//&nbsp;</span>{{entry.title}}
+                </h1>
                 {% if entry.body | length %}
 
                 {{entry.body }}
