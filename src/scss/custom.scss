@@ -250,7 +250,7 @@ figure{
   .iframe-wrapper{
     min-height:900px;
   }
-  .WBAusb {
-    display: none;
+  .iframe-wrapper .WBAusb {
+    display: none!important;
 }
   
