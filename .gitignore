@@ -5,6 +5,7 @@
 *.env.**
 /.idea
 /vendor
+/public_html/cpresources
 /public_html/assets
 public_html/assets
 node_modules/** 

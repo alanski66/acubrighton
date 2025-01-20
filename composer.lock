@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "24ebef8476c8b36b1f8ee531821d7ce2",
+    "content-hash": "3e33a94bc94d77da4c78876142f5780e",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -220,11 +220,11 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v2.2.3",
+            "version": "v2.2.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/ca69b9cc502867111e585f7c627894ffac6f328a",
-                "reference": "ca69b9cc502867111e585f7c627894ffac6f328a",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/ea826dbe5b3fe76960073a2167d5cf996c811cda",
+                "reference": "ea826dbe5b3fe76960073a2167d5cf996c811cda",
                 "shasum": ""
             },
             "require": {
@@ -263,15 +263,15 @@
                 "localization",
                 "postal"
             ],
-            "time": "2024-11-11T16:07:47+00:00"
+            "time": "2025-01-13T16:03:24+00:00"
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.5.4",
+            "version": "1.5.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/bc0593537a463e55cadf45fd938d23b75095b7e1",
-                "reference": "bc0593537a463e55cadf45fd938d23b75095b7e1",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/08c50d5ec4c6ced7d0271d2862dec8c1033283e6",
+                "reference": "08c50d5ec4c6ced7d0271d2862dec8c1033283e6",
                 "shasum": ""
             },
             "require": {
@@ -308,7 +308,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2024-11-27T15:35:25+00:00"
+            "time": "2025-01-08T16:17:16+00:00"
         },
         {
             "name": "composer/semver",
@@ -416,11 +416,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.5.9",
+            "version": "5.5.10",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/dcec103dc13a4d6626f3226900237a0b5a99c5df",
-                "reference": "dcec103dc13a4d6626f3226900237a0b5a99c5df",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/3ff575a4c8921d2c43a700e9e1f9f98014c379e6",
+                "reference": "3ff575a4c8921d2c43a700e9e1f9f98014c379e6",
                 "shasum": ""
             },
             "require": {
@@ -518,7 +518,7 @@
                 "docs": "https://craftcms.com/docs/5.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2025-01-06T18:35:42+00:00"
+            "time": "2025-01-15T00:23:37+00:00"
         },
         {
             "name": "craftcms/html-field",
@@ -3544,11 +3544,11 @@
         },
         {
             "name": "spicyweb/craft-embedded-assets",
-            "version": "5.4.0",
+            "version": "5.4.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spicywebau/craft-embedded-assets/zipball/bd1e1da3c1d10fd70afcd64b55e3e526f19e8b44",
-                "reference": "bd1e1da3c1d10fd70afcd64b55e3e526f19e8b44",
+                "url": "https://api.github.com/repos/spicywebau/craft-embedded-assets/zipball/29ec601fcd7d077d19b218a4548e5f0d787ad2a5",
+                "reference": "29ec601fcd7d077d19b218a4548e5f0d787ad2a5",
                 "shasum": ""
             },
             "require": {
@@ -3563,7 +3563,7 @@
                 "schemaVersion": "1.0.0",
                 "class": "spicyweb\\embeddedassets\\Plugin",
                 "changelogUrl": "https://github.com/spicywebau/craft-embedded-assets/blob/5.x/CHANGELOG.md",
-                "downloadUrl": "https://github.com/spicywebau/craft-embedded-assets/archive/5.4.0.zip"
+                "downloadUrl": "https://github.com/spicywebau/craft-embedded-assets/archive/5.4.1.zip"
             },
             "autoload": {
                 "psr-4": {
@@ -3593,10 +3593,10 @@
             "support": {
                 "issues": "https://github.com/spicywebau/craft-embedded-assets/issues",
                 "source": "https://github.com/spicywebau/craft-embedded-assets",
-                "docs": "https://github.com/spicywebau/craft-embedded-assets/blob/5.4.0/README.md",
+                "docs": "https://github.com/spicywebau/craft-embedded-assets/blob/5.4.1/README.md",
                 "rss": "https://github.com/spicywebau/craft-embedded-assets/commits/5.x.atom"
             },
-            "time": "2024-11-12T10:28:28+00:00"
+            "time": "2025-01-15T03:20:12+00:00"
         },
         {
             "name": "spomky-labs/cbor-php",
