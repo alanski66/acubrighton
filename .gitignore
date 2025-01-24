@@ -8,7 +8,9 @@
 /public_html/cpresources
 /public_html/assets
 public_html/assets
+public_html/assety
 node_modules/** 
 scripts/** 
 /scripts/** 
 .DS_Store
+config.codekit3
