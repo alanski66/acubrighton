@@ -1,0 +1,6 @@
+<!-- block iframe -->
+{% if block.iframeEmbed|length %}
+<div class="iframe-wrapper">
+    {{block.iframeEmbed | raw}}
+</div>
+{% endif %}

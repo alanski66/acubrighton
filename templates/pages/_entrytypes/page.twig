@@ -1,0 +1,52 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+{% import '_macros' as macros %}
+
+{% block content %}
+
+<!--  pages/page Entry type Content -->
+{% if entry is defined %}
+
+{# {% include '/_partials/hero-featured.twig' %} #}
+{# {% include('_partials/header-shallow')%} #}
+{% cache %}
+{% set asset = entry.image.one() ?? null %}
+{% set alt = "" %}
+{% if asset.alt is defined  and asset.alt| length > 0 %}
+{% set alt = asset.alt %}
+{% else %}
+{% set alt = "Image of page "~ entry.title %}
+{% endif %}
+
+<section class="pag py-5 bg-white">
+    <div class="container ">
+        <div class="row">
+
+            <div class="col-12  {% if asset|length %}col-md-7 order-last order-md-first{%endif%}" >
+
+                <h1 class="d-none d-md-block mb-4">
+                    <span class='d-inline text-primary'> &nbsp;//&nbsp;</span>{{entry.title}}
+                </h1>
+                {% if entry.body | length %}
+
+                {{entry.body }}
+
+                {% endif %}
+
+            </div>
+            {% if asset|length %}
+            <div class="col-12  col-md-5 order-first order-md-last pb-3">
+                <h1 class="d-block d-md-none">{{entry.title}}</h1>
+                <img src="{{asset.url}}" alt="{{alt}}" class=" mt-md-5 mb-3 shadow img-fluid ps-0 pb-0" />
+
+            </div>
+            {% endif %}
+        </div>
+
+    </div>
+</section>
+
+{% endcache %}
+
+{% endif %}
+
+{% endblock %}

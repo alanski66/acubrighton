@@ -1,0 +1,9 @@
+<!-- block text -->
+
+
+
+  <div class="block block-{{block.type}} mb-5">
+    <h3>{% if block.title | length %}{{block.title}}{% endif %}   </h3>
+    {% if block.body | length %}{{block.body}}{% endif %} 
+  </div>
+    

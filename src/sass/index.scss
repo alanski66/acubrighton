@@ -1,0 +1,81 @@
+@use "../../node_modules/@yohns/picocss/scss/pico.scss" with (
+  $theme-color: "red"
+);
+// @use "colors" as *;
+@import "theme.scss";
+
+//core style
+// $pico-font-family-sans-serif = "EB Garamond", serif;
+body{
+    background-color: #fcf5e53b;
+    background-image: url('/img/hero-bg-pale.webp');
+    background-repeat: repeat;
+    font-optical-sizing: auto;
+    // background-color: rgba(255,255,255),0.1;
+}
+.container{
+    background-color: #ffffff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+hgroup>*{
+    // margin-bottom: initial;
+}
+h1,h2,h3,h4,h5,h6{
+    // font-family: "Garamond", serif!important;
+    margin-block-end:0.5rem;
+}
+main{
+    background-color: #ffffff;
+}
+.grid div{
+    background-color: aqua;
+}
+.container,header,main,section,.bg-white{
+    background-color: #ffffff;
+}
+//header
+.shadow-bottom{
+    // box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+//navigation
+.nav-lines{
+    border-top:1px solid var(--pico-primary);
+    border-bottom:1px solid var(--pico-primary);
+
+    border-width: 1px;
+}
+
+//hero
+
+.hero-bg{
+    // background-color: aliceblue;
+    background-image: url('/img/miguel.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255,255,255),0.1;
+}
+.hero-image{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/miguel.webp");
+
+    /* Set a specific height */
+    height: 100v;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }

@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: priceTable
+instructions: null
+name: 'Price table'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    - 58c65ed1-bba4-448c-b72a-c1fa5446beec # Treatment price
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: true
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,67 @@
+{% import '_macros' as macros %}
+
+<header class="w-100 mx-auto bg-light ">
+
+  <div class="container ">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    
+      <a class="navbar-brand" href="{{baseUrl}}"><img src="{{baseUrl}}img/acu-logo2min.svg" class="logo" alt="Acu Brighton Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          {# {% set pages = craft.entries.section('pages').hide('not 1').all() %} #}
+          {% set entries = craft.entries.section('pages')
+            .hide(false)
+            .level(1)
+            .with(['descendants'])
+            .all() %}
+            {% set dropdown = ""  %}
+          {% for entry in entries %}
+            {% if entry.hasDescendants  %}
+              {% set dropdown = "dropdown"  %}
+           
+            <li class="nav-item {{dropdown}} {% if entry.hide %}true{% else %}false{% endif %}">
+              
+              
+                <a class="nav-link dropdown-toggle" href="{{entry.url}}" role="button" {{ craft.deviceDetect.isMobile ? 'data-bs-toggle="dropdown"' : 'data-hah' }} aria-expanded="false">
+                  {{ entry.title }}
+                </a>
+                    <ul class="dropdown-menu">
+                    {% if entry.level == "1" %}
+                    <li class="nav-item d-lg-none" >
+                      <a href="{{entry.url}}" class="nav-link dropdown-item">{{entry.title}}</a>
+                    </li> 
+                    {% endif %}
+                    
+                    {% for child in entry.descendants %}
+                        <li class="child {% if child.hide %}true{% else %}false{% endif %}"><a href="{{ child.url }}" class="dropdown-item">{{ child.title}}</a></li>
+                    {% endfor %}
+                    </ul>
+                  
+              
+            </li>
+            {# normal no child links #}
+            {% else %}
+              <li class="nav-item">
+                <a href="{{entry.url}}" class="nav-link">{{entry.title}}</a>
+              </li> 
+            {% endif %} 
+          {% endfor %}
+
+          {# {% for entry in pages %}
+            {% set navlink = entry.url %}
+            <li class="nav-item level{{ entry.level }} {{ entry.title |lower }} {%if loop.last%}last pe-0{%endif%}">
+              <a id="{{ entry.title }}" href="{{ navlink }}" class="nav-link level{{ entry.level }}">{{entry.title }}</a>
+            </li>
+         
+          {% endfor %} #}
+
+        </ul>
+      </div>
+    
+  </nav>
+</div>
+</header>
