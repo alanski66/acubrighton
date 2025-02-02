@@ -12,7 +12,7 @@ settings:
     - 994884b7-02f8-4488-9302-b1688ae96e6a # _Text with image
     - dfbecf23-f0aa-4d69-9909-4d13e6bcae60 # _Blockquote
     - 778b63af-ba35-4c6e-bc4e-4fa8764d54e3 # Url link
-    - e7472983-abd7-4164-9ee1-4e9ad5694afb # _Video
+    - e7472983-abd7-4164-9ee1-4e9ad5694afb # _Embed
     - 8b8221e5-58d7-43f3-8e13-ff3559e61733 # Slide
     - 5e068733-e545-4667-8b60-515d9248b995 # _Contact form
   includeTableView: false

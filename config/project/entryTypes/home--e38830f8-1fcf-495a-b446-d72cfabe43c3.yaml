@@ -36,6 +36,22 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-15T14:02:37+00:00'
+            elementCondition: null
+            fieldUid: eb3d9a18-cdac-4bc0-b733-c87ec56711d7 # Hero style
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 77007e81-20bc-4cb1-a53e-43be8925bc9f
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2025-01-04T15:56:41+00:00'
             elementCondition: null
             fieldUid: 381ca719-b0cc-4bba-9b7d-4f65f18f781f # Image
@@ -50,7 +66,23 @@ fieldLayouts:
             uid: 56e191a0-01b0-4561-8dc5-c6a7a5625a6b
             userCondition: null
             warning: null
-            width: 100
+            width: 50
+          -
+            dateAdded: '2025-01-15T13:09:42+00:00'
+            elementCondition: null
+            fieldUid: 3bf0e272-5fcf-4c88-906d-22736f2d2145 # Image mobile
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 05ac164a-d3a8-4f4d-b0b0-1b0fd4e7b3b3
+            userCondition: null
+            warning: null
+            width: 50
           -
             dateAdded: '2025-01-04T15:27:50+00:00'
             elementCondition: null
