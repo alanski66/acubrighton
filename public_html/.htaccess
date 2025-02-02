@@ -1,14 +1,22 @@
 Header set Access-Control-Allow-Origin "*"
 <IfModule mod_rewrite.c>
     RewriteEngine On
+<<<<<<< HEAD
+=======
 
+>>>>>>> a9ef273bbab023efa6b243ad798dc5223f587415
     RewriteCond %{HTTPS} off
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
     
     RewriteCond %{HTTP_HOST} !^www\.
     RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301]
+<<<<<<< HEAD
+   
+    # Route 404s to index.php
+=======
 
     # Send would-be 404 requests to Craft
+>>>>>>> a9ef273bbab023efa6b243ad798dc5223f587415
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} !^/(favicon\.ico|apple-touch-icon.*\.png)$ [NC]
