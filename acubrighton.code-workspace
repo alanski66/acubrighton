@@ -4,4 +4,10 @@
             "path": "../acucraft"
         }
     ]
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
 }
