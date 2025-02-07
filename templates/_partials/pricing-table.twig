@@ -18,7 +18,10 @@
                         <div class="text-center p-4">{{block.description}}</div>
                     </div>
                     <div class="card-footer bg-white border-0 text-center">
-                        <a class="btn btn-primary">Book now</a>
+                        {% if block.entryLink | length %}
+                        <a class="btn btn-primary" href="{{block.entryLink.one().url}}">Book now</a>
+                        {% endif %}
+                        
                       </div>
 
                 </div>
