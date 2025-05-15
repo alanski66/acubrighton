@@ -321,8 +321,8 @@ plugins:
     settings:
       cp_label: Forms
       disabled_fields: ''
-      from_email: info@rebeccaluff.com
-      from_name: 'Rebecca Luff'
+      from_email: acubrighton@gmail.com
+      from_name: 'Miguel'
       recaptcha_min_score: '0.5'
       recaptcha_public: ''
       recaptcha_secret: ''
