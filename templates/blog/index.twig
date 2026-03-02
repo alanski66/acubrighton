@@ -1,0 +1,63 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% set bodyClass = "blog" %}
+{% block content %}
+
+{# {% include('_partials/cat-cards') %} #}
+<section class="container position-relative g-5 py-5 ">
+    
+     <div class="d-none d-md-block mb-4  display-6">
+                    <span class='d-inline text-primary'> &nbsp;//&nbsp;</span>
+                    <a href="/blog" class="link-underline text-black link-underline-opacity-0">Blog</a>
+                </div>
+
+    {% set entries = craft.entries.section('blog').limit(100).all() %}
+    {% for entry in entries %}
+
+    {% set asset = entry.image.eagerly().one() ?? null %}
+    {% set video = entry.mediaEmbed.one() ?? null %}
+
+
+    <div class="article loop{{loop.index}} row  flex-m-row  h-md-250 position-relative py-5 mb-5 shadow z-3">
+        <div class="col-12 col-md-12 col-lg-7 d-flex flex-column px-5">
+            <a class="link-underline link-underline-opacity-0" href="{{entry.url}}"><h3 class="">{{entry.title}}</h3></a>
+            {% if asset | length %}
+            <img class="d-lg-none img-fluid mb-3" loading="lazy" src="{{ asset.url}}">
+
+            {% endif %}
+            <div class="body">
+                {% if entry.body | length %}{{entry.body}}{% endif %}
+            </div>
+            {% if entry.intro | length %}
+            <div class="d-flex flex-column position-relative">
+                
+                
+                    <p>{{entry.intro|raw}}
+                    </p>
+
+                
+            </div>
+            {% endif %}
+
+            
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-5 d-flex justify-content-end align-items-start mt-3 px-5">
+            {% if video |length %}
+            {% set embeddedAsset = craft.embeddedAssets.get(video) %}
+            {% if embeddedAsset | length and embeddedAsset.type == "video" %}
+            <div class="ratio ratio-4x3">
+                {{ embeddedAsset.html }}
+            </div>
+            {% endif %}
+            {% else %}
+            <img class="d-none d-lg-block img-fluid " loading="lazy" src="{{ asset.getUrl('article') }}">
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+
+
+</section>
+
+{% endblock %}

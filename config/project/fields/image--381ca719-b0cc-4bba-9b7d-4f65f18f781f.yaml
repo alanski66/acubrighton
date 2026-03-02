@@ -9,6 +9,7 @@ settings:
   allowUploads: true
   allowedKinds: null
   branchLimit: null
+  defaultPlacement: end
   defaultUploadLocationSource: 'volume:97e342cd-a55e-42c9-99d5-de73541a4860' # Images
   defaultUploadLocationSubpath: null
   maintainHierarchy: false
@@ -22,6 +23,7 @@ settings:
   restrictedLocationSubpath: null
   selectionLabel: null
   showCardsInGrid: false
+  showSearchInput: true
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false

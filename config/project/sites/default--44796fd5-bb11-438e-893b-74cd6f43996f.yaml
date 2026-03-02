@@ -3,7 +3,7 @@ enabled: true
 handle: default
 hasUrls: true
 language: en-GB
-name: 'Acu Brighton'
+name: AcuBrighton
 primary: true
 siteGroup: b83563e4-d016-4de4-9291-d211ee33f97d # AcuBrighton Group
 sortOrder: 1

@@ -1,4 +1,4 @@
-dateModified: 1738919336
+dateModified: 1767891155
 elementSources:
   craft\elements\Entry:
     -
@@ -14,6 +14,7 @@ elementSources:
         - postDate
         - expiryDate
         - link
+        - type
       type: native
     -
       defaultSort:
@@ -28,6 +29,7 @@ elementSources:
       type: native
     -
       heading: 'Content Structures'
+      key: 'heading:3ce3fd8a-2443-479f-92e7-de311cd80a52'
       type: heading
     -
       defaultSort:
@@ -61,18 +63,21 @@ elementSources:
       type: native
     -
       heading: 'Channel content'
+      key: 'heading:9aa5271e-49e0-4eb6-9b43-52a780baebae'
       type: heading
     -
       key: 'section:9ba69d50-bfc9-42a4-a532-0dd623c5d252' # Blog
       type: native
     -
       heading: Navigation
+      key: 'heading:c7a0fee1-5ba8-43fd-a5e8-77279e2d8e11'
       type: heading
     -
       key: 'section:ece3f4c3-b556-4a0d-a0b4-9eed0b80a916' # Menu
       type: native
     -
       heading: Testimonials
+      key: 'heading:964df43d-9327-4899-9801-9bdda9a8f371'
       type: heading
     -
       defaultSort:
@@ -184,6 +189,7 @@ meta:
     04070434-f1fd-4db0-8ad0-51749d544db5: Square # Square
     73707630-0f56-4ff8-a936-17113e86c682: Organisation # Organisation
     99639335-7fe8-46fe-bbde-b2f117aad2f6: Image # Image
+    a00a7860-df52-4225-b6c1-28d33f32b611: 'Contact wheelform' # Contact wheelform
     a1b32f40-889c-402e-ba5b-de1a3a479e73: 'Hero button text' # Hero button text
     a8461432-9f67-4ed1-ac53-5fb464f68ac8: Pages # Pages
     ac41f01b-141c-4f17-96e8-7dadb8b1ff72: 'Price table' # Price table
@@ -321,8 +327,8 @@ plugins:
     settings:
       cp_label: Forms
       disabled_fields: ''
-      from_email: acubrighton@gmail.com
-      from_name: 'Miguel'
+      from_email: miguel@acupuncture-brighton.co.uk
+      from_name: Miguel
       recaptcha_min_score: '0.5'
       recaptcha_public: ''
       recaptcha_secret: ''
@@ -334,5 +340,5 @@ system:
   live: true
   name: AcuBrighton
   retryDuration: null
-  schemaVersion: 5.6.0.2
+  schemaVersion: 5.8.0.3
   timeZone: America/Los_Angeles

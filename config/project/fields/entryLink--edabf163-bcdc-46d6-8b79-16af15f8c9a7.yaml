@@ -9,7 +9,7 @@ settings:
   maintainHierarchy: false
   maxRelations: 1
   minRelations: null
-  selectionLabel: 'Add menu item'
+  selectionLabel: Add
   showCardsInGrid: false
   showSiteMenu: true
   sources: '*'

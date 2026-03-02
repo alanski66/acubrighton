@@ -51,6 +51,9 @@
             {% endif %} 
           {% endfor %}
 
+           <li class="nav-item">
+                <a href="{{baseUrl}}blog" class="nav-link">Blog</a>
+              </li> 
           {# {% for entry in pages %}
             {% set navlink = entry.url %}
             <li class="nav-item level{{ entry.level }} {{ entry.title |lower }} {%if loop.last%}last pe-0{%endif%}">

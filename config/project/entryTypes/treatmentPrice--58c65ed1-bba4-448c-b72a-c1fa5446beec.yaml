@@ -87,18 +87,18 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2025-02-07T09:08:56+00:00'
+            dateAdded: '2025-02-07T09:18:37+00:00'
             elementCondition: null
             fieldUid: edabf163-bcdc-46d6-8b79-16af15f8c9a7 # entry link
             handle: null
             includeInCards: false
-            instructions: null
-            label: null
+            instructions: 'Add link to booking page'
+            label: 'Booking link'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0ff48738-3fe1-47df-8449-9afa1bc7405f
+            uid: 77696213-7c61-4711-9716-4fb013517747
             userCondition: null
             warning: null
             width: 100

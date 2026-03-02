@@ -2,19 +2,19 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "cloudgrayau/cleantalk": "1.1.0",
-    "craftcms/ckeditor": "4.8.0",
-    "craftcms/cms": "5.7.6",
+    "cloudgrayau/cleantalk": "1.1.2",
+    "craftcms/ckeditor": "4.11.0",
+    "craftcms/cms": "5.8.21",
     "ether/seo": "5.0.0",
     "ether/splash": "5.0.0",
     "leowebguy/device-detect": "3.1",
     "mmikkel/cp-field-inspect": "2.0.4",
     "nystudio107/craft-minify": "5.0.0",
-    "spicyweb/craft-embedded-assets": "5.4.3",
+    "spicyweb/craft-embedded-assets": "5.4.4",
     "verbb/buttonbox": "5.0.0",
     "vlucas/phpdotenv": "^5.4.0",
-    "wrav/oembed": "3.1.4",
-    "xpertbot/craft-wheelform": "4.0.3"
+    "wrav/oembed": "3.1.6",
+    "xpertbot/craft-wheelform": "4.0.4"
   },
   "require-dev": {
     "craftcms/generator": "^2.0.0",
